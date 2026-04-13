@@ -38,7 +38,7 @@ export default function Footer() {
             <Link href="#home" className="mb-5 inline-flex items-center gap-3 transition-opacity hover:opacity-90">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#111318] ring-1 ring-[#FF6B00]/30 shadow-[0_16px_34px_rgba(0,0,0,0.32)]">
                 <Image
-                  src="/logo.png"
+                  src="/logo-old.png"
                   alt="Axtora Labs"
                   width={52}
                   height={52}

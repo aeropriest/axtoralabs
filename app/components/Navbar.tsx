@@ -44,7 +44,7 @@ export default function Navbar() {
           <Link href="#home" className="flex items-center gap-3 transition-opacity hover:opacity-90">
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#111318]/85 ring-1 ring-[#FF6B00]/25 shadow-[0_10px_30px_rgba(0,0,0,0.25)] md:h-12 md:w-12">
               <Image
-                src="/logo.png"
+                src="/logo-old.png"
                 alt="Axtora Labs"
                 width={52}
                 height={52}

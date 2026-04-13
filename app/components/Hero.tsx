@@ -22,43 +22,46 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col justify-end px-4 pb-20 pt-32 sm:px-6 sm:pb-24 sm:pt-36 lg:px-8 lg:pb-16 lg:pt-40">
         <div className="grid w-full gap-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div className="max-w-2xl text-center sm:text-left lg:max-w-[42rem] lg:pb-2">
-          <motion.p
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mb-4 max-w-xl text-[1.05rem] leading-relaxed text-white/88 sm:text-[1.35rem] md:text-[1.75rem]"
-          >
-            Context-aware voice AI built for branded agents, patented orchestration, and real-world deployment.
-          </motion.p>
-          <motion.p
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mb-0 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#FFB27A] sm:text-xs md:text-sm"
-          >
-            Now Tokenized with $AXTORA on Virtuals Protocol
-          </motion.p>
+          <div className="flex min-h-[320px] max-w-2xl flex-col justify-between text-center sm:text-left lg:max-w-[42rem] lg:min-h-[360px] lg:pb-12">
+            <motion.p
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="max-w-xl text-[1.05rem] leading-relaxed text-white/88 sm:text-[1.35rem] md:text-[1.75rem]"
+            >
+              Context-aware voice AI built for branded agents, patented orchestration, and real-world deployment.
+            </motion.p>
 
-          <motion.div
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-8 flex flex-wrap items-center justify-center gap-4 border-t border-white/10 pt-5 text-left sm:justify-start md:gap-7"
-          >
-            <div className="flex items-center gap-2 text-sm text-white/60">
-              <Shield className="w-5 h-5 text-[#FF6B00]" />
-              <span>Patented AI (HK30101316)</span>
+            <div>
+              <motion.p
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="mb-0 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#FFB27A] sm:text-xs md:text-sm"
+              >
+                Now Tokenized with $AXTORA on Virtuals Protocol
+              </motion.p>
+
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                className="mt-8 flex flex-wrap items-center justify-center gap-4 border-t border-white/10 pt-5 text-left sm:justify-start md:gap-7"
+              >
+                <div className="flex items-center gap-2 text-sm text-white/60">
+                  <Shield className="w-5 h-5 text-[#FF6B00]" />
+                  <span>Patented AI (HK30101316)</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-white/60">
+                  <Zap className="w-5 h-5 text-[#FF6B00]" />
+                  <span>Virtuals Protocol IAO</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-white/60">
+                  <Globe className="w-5 h-5 text-[#FF6B00]" />
+                  <span>Global Patent Portfolio</span>
+                </div>
+              </motion.div>
             </div>
-            <div className="flex items-center gap-2 text-sm text-white/60">
-              <Zap className="w-5 h-5 text-[#FF6B00]" />
-              <span>Virtuals Protocol IAO</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-white/60">
-              <Globe className="w-5 h-5 text-[#FF6B00]" />
-              <span>Global Patent Portfolio</span>
-            </div>
-          </motion.div>
           </div>
 
           <motion.div
