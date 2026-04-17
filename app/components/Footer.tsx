@@ -14,7 +14,7 @@ const footerLinks = {
     { label: "Community", href: "#community" },
   ],
   resources: [
-    { label: "Whitepaper", href: "/whitepaper.md" },
+    { label: "Whitepaper", href: "/whitepaper" },
     { label: "Documentation", href: "#" },
     { label: "Patent Info", href: "#" },
     { label: "Press Kit", href: "#" },

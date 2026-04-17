@@ -324,7 +324,7 @@ export default function Technology() {
             token economics, and the roadmap for the $AXTORA ecosystem.
           </p>
           <a
-            href="/whitepaper.md"
+            href="/whitepaper"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-[#1C1C22] bg-[#FF6B00] rounded-full hover:bg-[#FF6B00]/90 transition-all duration-300 glow-effect"

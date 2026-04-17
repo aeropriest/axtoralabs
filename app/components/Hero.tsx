@@ -12,7 +12,7 @@ export default function Hero() {
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/banner.png')" }}
+        style={{ backgroundImage: "url('/banner-with-text.png')" }}
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,12,16,0.72)_0%,rgba(12,15,20,0.56)_30%,rgba(14,16,21,0.26)_58%,rgba(17,20,25,0.46)_100%)]" />
       <div className="absolute inset-0">
