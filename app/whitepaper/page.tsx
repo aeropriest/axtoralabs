@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Shield, Zap, Globe, MessageCircle } from "lucide-react";
 
 export default function WhitepaperPage() {
@@ -6,11 +7,13 @@ export default function WhitepaperPage() {
     <main className="min-h-screen bg-[#111419] text-white">
       <header className="fixed inset-x-0 top-0 z-30 border-b border-white/10 bg-[#111419]/80 backdrop-blur-sm">
         <div className="mx-auto flex h-20 w-full max-w-[1460px] items-center justify-between px-5 sm:px-6 lg:px-8 xl:px-10">
-          <Link href="/V2" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#111318]/55 ring-1 ring-[#FF6B00]/20 backdrop-blur-sm">
-              <img
+              <Image
                 src="/logo-old.png"
                 alt="Axtora Labs"
+                width={32}
+                height={32}
                 className="h-auto w-8"
               />
             </div>
@@ -25,9 +28,6 @@ export default function WhitepaperPage() {
           </Link>
 
           <nav className="hidden items-center gap-6 md:flex">
-            <Link href="/V2" className="text-sm text-white/70 transition-colors hover:text-[#FFB27A]">
-              Back to V2
-            </Link>
             <Link
               href="https://x.com/axtoralabs"
               target="_blank"
@@ -230,7 +230,7 @@ export default function WhitepaperPage() {
               <div className="rounded-lg border border-white/10 bg-[#1a1d29] p-6">
                 <h4 className="mb-3 text-xl font-semibold text-white">2. Context Search</h4>
                 <p className="text-white/80">
-                  Intelligent retrieval system identifies relevant context from the curated database based on the user's query, current situation, and conversation history.
+                  Intelligent retrieval system identifies relevant context from the curated database based on the user&apos;s query, current situation, and conversation history.
                 </p>
               </div>
 
@@ -319,9 +319,11 @@ export default function WhitepaperPage() {
               <h3 className="mb-6 text-2xl font-semibold text-[#FFB27A]">The Axtora Labs Multimodal Robotic Control Architecture</h3>
               
               <div className="mb-8">
-                <img
+                <Image
                   src="/patent-diagram.png"
                   alt="Patent Technical Architecture Diagram"
+                  width={800}
+                  height={600}
                   className="w-full rounded-lg border border-white/10"
                 />
               </div>
@@ -348,7 +350,7 @@ export default function WhitepaperPage() {
                         <strong>Core Patent Point:</strong> The specific sequence and method of converting vocal signal inputs into a formatted, metadata-tagged text object, optimized for a robotic (non-conversational) control vector.
                       </p>
                       <p className="mb-3 text-white/80">
-                        The Human Operator's vocalizations (speech commands) are captured by the HMI (Human-Machine Interface). The HMI passes the analog signal to the {"<strong>"}Automatic Speech Recognition (ASR) Engine{"</strong>"}.
+                        The Human Operator&apos;s vocalizations (speech commands) are captured by the HMI (Human-Machine Interface). The HMI passes the analog signal to the {"<strong>"}Automatic Speech Recognition (ASR) Engine{"</strong>"}.
                       </p>
                       <p className="text-white/80">
                         This ASR module utilizes a Deep Neural Network (DNN) for acoustic modeling to perform transcription. Critically, it does not output just text; it outputs a {"<strong>Voice to Text Object</strong>"}. This object contains the transcription, time stamps, and acoustic parameters like confidence scores for phonemes.
@@ -364,8 +366,8 @@ export default function WhitepaperPage() {
                         This subsystem performs dual functions:
                       </p>
                       <ul className="list-inside list-disc space-y-2 text-white/80">
-                        <li><strong>Voice Training (Speaker ID):</strong> It uses the input vocal signal to generate or match a unique speaker-profile embedding (e.g., d-vector). This confirms the operator's identity (e.g., ensuring authorization).</li>
-                        <li><strong>Database Lookup:</strong> The speaker ID is used to query the {"<strong>Context Database</strong>"} for that operator's specific parameters, which are then passed to the ASR and LLM for customized processing.</li>
+                        <li><strong>Voice Training (Speaker ID):</strong> It uses the input vocal signal to generate or match a unique speaker-profile embedding (e.g., d-vector). This confirms the operator&apos;s identity (e.g., ensuring authorization).</li>
+                        <li><strong>Database Lookup:</strong> The speaker ID is used to query the {"<strong>Context Database</strong>"} for that operator&apos;s specific parameters, which are then passed to the ASR and LLM for customized processing.</li>
                       </ul>
                     </div>
                   </div>
@@ -381,7 +383,7 @@ export default function WhitepaperPage() {
                     <div className="rounded-lg border border-white/5 bg-[#0f1117] p-6">
                       <h5 className="mb-3 text-lg font-semibold text-[#FFB27A]">3. Context Management & Policy Selector (The Context Hub)</h5>
                       <p className="mb-3 text-white/80">
-                        <strong>Core Patent Point:</strong> The patented orchestration logic that binds the ASR output to dynamic, non-verbal system state data (vocal profile, robotic state, environmental selection) and pushes this consolidated "state vector" to the LLM.
+                        <strong>Core Patent Point:</strong> The patented orchestration logic that binds the ASR output to dynamic, non-verbal system state data (vocal profile, robotic state, environmental selection) and pushes this consolidated &quot;state vector&quot; to the LLM.
                       </p>
                       <p className="mb-3 text-white/80">
                         This is the critical arbitration node. It simultaneously accepts inputs from multiple sources to synthesize a real-time system context:
@@ -389,7 +391,7 @@ export default function WhitepaperPage() {
                       <ul className="list-inside list-disc space-y-2 text-white/80">
                         <li>ASR Transcription output.</li>
                         <li>Personalized operator profile parameters (e.g., age, preference, permissions) from the Context Database.</li>
-                        <li>The {"<strong>Context Selection Object</strong>"} from the operator's {"<strong>Context Selection HMI</strong>"} (e.g., confirming which robot or work cell is being commanded).</li>
+                        <li>The {"<strong>Context Selection Object</strong>"} from the operator&apos;s {"<strong>Context Selection HMI</strong>"} (e.g., confirming which robot or work cell is being commanded).</li>
                       </ul>
                       <p className="mb-3 text-white/80">
                         This consolidated data is pushed into the {"<strong>Context Management & Policy Selector</strong>"}, which performs semantic indexing and vector-space modeling on the incoming data. It synthesizes a high-level context object.
@@ -399,10 +401,10 @@ export default function WhitepaperPage() {
                     <div className="rounded-lg border border-white/5 bg-[#0f1117] p-6">
                       <h5 className="mb-3 text-lg font-semibold text-[#FFB27A]">4. Found Context {'=>'} LLM Ingestion (The Situational Vector)</h5>
                       <p className="mb-3 text-white/80">
-                        This subsystem takes the high-level context object and prepares it for LLM digestion. It combines the operator's transcription with the surrounding system state (which robot is being used, who the operator is).
+                        This subsystem takes the high-level context object and prepares it for LLM digestion. It combines the operator&apos;s transcription with the surrounding system state (which robot is being used, who the operator is).
                       </p>
                       <p className="text-white/80">
-                        It outputs a "situational vector" (e.g., a structured JSON or embedding vector) that encapsulates: <code className="rounded bg-[#1a1d29] px-2 py-1 text-sm">{'{Operator Command + Operator Profile + Robot ID + Environmental state + Policy constraints}'}</code>. This vector is fed into the LLM.
+                        It outputs a &quot;situational vector&quot; (e.g., a structured JSON or embedding vector) that encapsulates: <code className="rounded bg-[#1a1d29] px-2 py-1 text-sm">{'{Operator Command + Operator Profile + Robot ID + Environmental state + Policy constraints}'}</code>. This vector is fed into the LLM.
                       </p>
                     </div>
                   </div>
@@ -418,13 +420,13 @@ export default function WhitepaperPage() {
                     <div className="rounded-lg border border-white/5 bg-[#0f1117] p-6">
                       <h5 className="mb-3 text-lg font-semibold text-[#FFB27A]">5. Large Language Model (LLM) as a Planner</h5>
                       <p className="mb-3 text-white/80">
-                        <strong>Core Patent Point:</strong> The novel application of an embodied LLM that doesn't generate conversational chat, but instead generates structured action plans and multimodal feedback vectors based on a patented state vector input.
+                        <strong>Core Patent Point:</strong> The novel application of an embodied LLM that doesn&apos;t generate conversational chat, but instead generates structured action plans and multimodal feedback vectors based on a patented state vector input.
                       </p>
                       <p className="mb-3 text-white/80">
                         The {"<strong>Large Language Model (LLM)</strong>"} receives the situational vector (e.g., <code className="rounded bg-[#1a1d29] px-2 py-1 text-sm">{'{command: "pick up the box on table A", operator: autorizado, robot_id: arm_1, state: idle}'}</code>).
                       </p>
                       <p className="mb-3 text-white/80">
-                        Rather than a text chat, the LLM's output is a multimodal action plan vector, typically containing:
+                        Rather than a text chat, the LLM&apos;s output is a multimodal action plan vector, typically containing:
                       </p>
                       <ol className="list-inside list-decimal space-y-2 text-white/80">
                         <li><strong>Robot Command:</strong> A sequence of high-level control operations (e.g., path waypoints, inverse kinematics target, gripper command).</li>
@@ -438,7 +440,7 @@ export default function WhitepaperPage() {
                         The action plan vector is sent directly to the commanded {"<strong>Generic Robotic System (End-Effector)</strong>"}.
                       </p>
                       <p className="text-white/80">
-                        The robot's local controller decodes the high-level commands into joint-space trajectory targets and servo outputs, physically executing the intended task (e.g., picking up the box).
+                        The robot&apos;s local controller decodes the high-level commands into joint-space trajectory targets and servo outputs, physically executing the intended task (e.g., picking up the box).
                       </p>
                     </div>
 
@@ -451,10 +453,10 @@ export default function WhitepaperPage() {
                         Simultaneously, the Speech Feedback Plan text is sent to the {"<strong>Neural Text-To-Speech (TTS) Engine</strong>"}.
                       </p>
                       <p className="mb-3 text-white/80">
-                        Crucially, this TTS is *not generic*. It is concurrently fed with the user's specific {"<strong>Adaptive Speaker Profile</strong>"} parameters (e.g., d-vector, synthesis pitch, speed) that were retrieved at Domain 1.
+                        Crucially, this TTS is *not generic*. It is concurrently fed with the user&apos;s specific {"<strong>Adaptive Speaker Profile</strong>"} parameters (e.g., d-vector, synthesis pitch, speed) that were retrieved at Domain 1.
                       </p>
                       <p className="text-white/80">
-                        The TTS engine synthesizes the text output into an optimized analog audio signal, which is broadcast from the robot's {"<strong>Speaker Object</strong>"}. The robot vocalizes its confirmation using a voice pattern adapted *to* or *from* the specific operator.
+                        The TTS engine synthesizes the text output into an optimized analog audio signal, which is broadcast from the robot&apos;s {"<strong>Speaker Object</strong>"}. The robot vocalizes its confirmation using a voice pattern adapted *to* or *from* the specific operator.
                       </p>
                     </div>
                   </div>
@@ -464,7 +466,7 @@ export default function WhitepaperPage() {
               <div className="mt-12 rounded-lg border border-[#FF6B00]/20 bg-[#FF6B00]/5 p-6">
                 <h4 className="mb-4 text-xl font-semibold text-[#FFB27A]">Summary of Patented Innovation</h4>
                 <p className="text-lg text-white/80">
-                  The specific patented orchestration is the automated binding, indexing, and processing of the multimodal "state vector" that integrates ASR, SID-driven personalization, environment context, and policy constraints into a single input vector for an embodied LLM, which is then translated in parallel into optimized robotic actions and identity-adapted vocal feedback.
+                  The specific patented orchestration is the automated binding, indexing, and processing of the multimodal &quot;state vector&quot; that integrates ASR, SID-driven personalization, environment context, and policy constraints into a single input vector for an embodied LLM, which is then translated in parallel into optimized robotic actions and identity-adapted vocal feedback.
                 </p>
               </div>
             </div>
@@ -700,7 +702,7 @@ export default function WhitepaperPage() {
               <div className="rounded-lg border border-white/10 bg-[#1a1d29] p-6">
                 <h4 className="mb-3 text-xl font-semibold text-white">1. Licensing Access</h4>
                 <p className="mb-4 text-white/80">
-                  $AXTORA tokens are required to license Axora Labs' AI technology for commercial deployments. The token-based model ensures:
+                  $AXTORA tokens are required to license Axtora Labs&apos; AI technology for commercial deployments. The token-based model ensures:
                 </p>
                 <ul className="list-inside list-disc space-y-2 text-white/80">
                   <li>Transparent pricing</li>

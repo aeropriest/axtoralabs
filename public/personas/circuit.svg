@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="circuit-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2D2D35"/>
+      <stop offset="1" stop-color="#1C1C22"/>
+    </linearGradient>
+    <linearGradient id="circuit-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC587"/>
+      <stop offset="1" stop-color="#FF6B00"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="100" fill="url(#circuit-bg)"/>
+  <!-- subtle circuit grid -->
+  <g stroke="#FF6B00" stroke-width="1" opacity="0.18" fill="none">
+    <path d="M30 60 L60 60 L60 30"/>
+    <path d="M170 60 L140 60 L140 30"/>
+    <path d="M30 140 L60 140 L60 170"/>
+    <path d="M170 140 L140 140 L140 170"/>
+    <circle cx="30" cy="60" r="2" fill="#FF6B00"/>
+    <circle cx="170" cy="60" r="2" fill="#FF6B00"/>
+    <circle cx="30" cy="140" r="2" fill="#FF6B00"/>
+    <circle cx="170" cy="140" r="2" fill="#FF6B00"/>
+  </g>
+  <!-- antenna with bolt -->
+  <line x1="100" y1="40" x2="100" y2="58" stroke="#FFC587" stroke-width="3" stroke-linecap="round"/>
+  <path d="M104 26 L94 42 L102 42 L96 56 L108 38 L100 38 Z" fill="#F59E0B"/>
+  <!-- head: square robot with rounded corners -->
+  <rect x="58" y="64" width="84" height="76" rx="16" fill="url(#circuit-body)"/>
+  <!-- screen face -->
+  <rect x="68" y="76" width="64" height="42" rx="6" fill="#1C1C22"/>
+  <!-- big curious eyes -->
+  <circle cx="86" cy="97" r="8" fill="#FFC587"/>
+  <circle cx="86" cy="97" r="3" fill="#1C1C22"/>
+  <circle cx="114" cy="97" r="8" fill="#FFC587"/>
+  <circle cx="114" cy="97" r="3" fill="#1C1C22"/>
+  <!-- excited "o" mouth -->
+  <ellipse cx="100" cy="128" rx="8" ry="6" fill="#1C1C22"/>
+  <!-- side dials -->
+  <circle cx="58" cy="105" r="4" fill="#1C1C22"/>
+  <circle cx="142" cy="105" r="4" fill="#1C1C22"/>
+  <!-- neck and base -->
+  <rect x="86" y="142" width="28" height="10" rx="3" fill="#33333D"/>
+  <rect x="68" y="152" width="64" height="14" rx="6" fill="#FFC587"/>
+  <circle cx="80" cy="159" r="2" fill="#1C1C22"/>
+  <circle cx="100" cy="159" r="2" fill="#1C1C22"/>
+  <circle cx="120" cy="159" r="2" fill="#1C1C22"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="mira-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2D2D35"/>
+      <stop offset="1" stop-color="#1C1C22"/>
+    </linearGradient>
+    <linearGradient id="mira-body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0F0F2"/>
+      <stop offset="1" stop-color="#A6A6B2"/>
+    </linearGradient>
+    <linearGradient id="mira-accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8B3D"/>
+      <stop offset="1" stop-color="#FF6B00"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="100" fill="url(#mira-bg)"/>
+  <!-- elegant arc behind -->
+  <path d="M40 100 Q100 30 160 100" fill="none" stroke="url(#mira-accent)" stroke-width="1.5" opacity="0.5"/>
+  <!-- thin antenna -->
+  <line x1="100" y1="30" x2="100" y2="50" stroke="#F0F0F2" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="100" cy="28" r="3.5" fill="url(#mira-accent)"/>
+  <!-- head: tall elegant oval -->
+  <ellipse cx="100" cy="105" rx="44" ry="58" fill="url(#mira-body)"/>
+  <!-- visor band -->
+  <path d="M58 92 Q100 80 142 92 L142 108 Q100 96 58 108 Z" fill="#0E0F13"/>
+  <!-- single eye line -->
+  <rect x="74" y="97" width="52" height="4" rx="2" fill="url(#mira-accent)"/>
+  <circle cx="100" cy="99" r="3" fill="#FFE7D0"/>
+  <!-- subtle smile suggestion -->
+  <path d="M88 138 Q100 144 112 138" stroke="#A6A6B2" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- thin neck -->
+  <rect x="92" y="160" width="16" height="6" rx="2" fill="#A6A6B2"/>
+  <!-- shoulder collar with small badge -->
+  <path d="M58 170 Q100 158 142 170" fill="none" stroke="#F0F0F2" stroke-width="3" stroke-linecap="round"/>
+  <rect x="94" y="167" width="12" height="6" rx="1" fill="url(#mira-accent)"/>
+</svg>

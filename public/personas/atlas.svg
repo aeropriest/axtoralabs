@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="atlas-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2D2D35"/>
+      <stop offset="1" stop-color="#1C1C22"/>
+    </linearGradient>
+    <linearGradient id="atlas-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A5A66"/>
+      <stop offset="1" stop-color="#33333D"/>
+    </linearGradient>
+    <linearGradient id="atlas-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8B3D"/>
+      <stop offset="1" stop-color="#FF6B00"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="100" fill="url(#atlas-bg)"/>
+  <!-- antenna -->
+  <line x1="100" y1="38" x2="100" y2="58" stroke="#5A5A66" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="100" cy="36" r="4" fill="url(#atlas-glow)"/>
+  <!-- hard hat -->
+  <path d="M52 78 Q100 38 148 78 L148 84 L52 84 Z" fill="#FF6B00"/>
+  <rect x="56" y="78" width="88" height="6" fill="#C2410C"/>
+  <!-- head -->
+  <rect x="58" y="84" width="84" height="62" rx="14" fill="url(#atlas-body)" stroke="#FF6B00" stroke-width="1.5" stroke-opacity="0.4"/>
+  <!-- visor -->
+  <rect x="66" y="98" width="68" height="22" rx="6" fill="#0E0F13"/>
+  <rect x="74" y="103" width="14" height="12" rx="2" fill="url(#atlas-glow)"/>
+  <rect x="112" y="103" width="14" height="12" rx="2" fill="url(#atlas-glow)"/>
+  <!-- mouth grille -->
+  <rect x="82" y="128" width="36" height="6" rx="2" fill="#0E0F13"/>
+  <line x1="88" y1="128" x2="88" y2="134" stroke="#33333D" stroke-width="1"/>
+  <line x1="96" y1="128" x2="96" y2="134" stroke="#33333D" stroke-width="1"/>
+  <line x1="104" y1="128" x2="104" y2="134" stroke="#33333D" stroke-width="1"/>
+  <line x1="112" y1="128" x2="112" y2="134" stroke="#33333D" stroke-width="1"/>
+  <!-- collar -->
+  <rect x="68" y="148" width="64" height="14" rx="4" fill="#33333D"/>
+  <circle cx="78" cy="155" r="2" fill="#FF6B00"/>
+  <circle cx="100" cy="155" r="2" fill="#FF6B00"/>
+  <circle cx="122" cy="155" r="2" fill="#FF6B00"/>
+</svg>

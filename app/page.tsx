@@ -148,14 +148,16 @@ export default function Home() {
             <Link href={LINKS.tokenomics}>Tokenomics</Link>
             <Link href={LINKS.voiceContribution}>Earn $AXTORA</Link>
             <Link href={LINKS.roadmap}>Roadmap</Link>
+            <Link href="/tldr">TL;DR</Link>
+            <Link href="/demo">Demo</Link>
           </div>
           <div className="nav-cta">
             <Link href={LINKS.whitepaper} className="btn btn-ghost">
               Whitepaper
             </Link>
-            <a href={LINKS.bookDemo} className="btn btn-primary">
-              Book a demo
-            </a>
+            <Link href="/demo" className="btn btn-primary">
+              Try the demo
+            </Link>
           </div>
         </div>
       </nav>
@@ -174,9 +176,9 @@ export default function Home() {
               <em>what to say.</em>
             </h1>
             <div className="hero-actions">
-              <a href="#demo" className="btn btn-primary btn-lg">
-                Hear a live demo
-              </a>
+              <Link href="/demo" className="btn btn-primary btn-lg">
+                Try the live demo
+              </Link>
               <a href="#cta" className="btn btn-ghost btn-lg">
                 Talk to our team
               </a>
